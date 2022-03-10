@@ -18,5 +18,6 @@
   "bugs": {
     "url": "https://github.com/pleets/js-validators/issues"
   },
-  "homepage": "https://github.com/pleets/js-validators#readme"
+  "homepage": "https://github.com/pleets/js-validators#readme",
+  "type": "module"
 }
