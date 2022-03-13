@@ -4,9 +4,9 @@
   "description": "JavaScript validators",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Eror: no test specified\" && exit 1",
-    "lint-check": "npx eslint index.js ./src/**/*.js *.js --fix-dry-run",
-    "lint": "npx eslint index.js ./src/**/*.js *.js --fix",
+    "test": "jest",
+    "lint-check": "npx eslint index.js ./src/**/*.js ./tests/**/*.js *.js --fix-dry-run",
+    "lint": "npx eslint index.js ./src/**/*.js ./tests/**/*.js *.js --fix",
     "dev": "npx webpack --mode development",
     "prod": "npx webpack --mode production",
     "watch": "npx webpack --mode development --watch"
@@ -25,8 +25,11 @@
   },
   "homepage": "https://github.com/pleets/js-validators#readme",
   "devDependencies": {
+    "@babel/preset-env": "^7.16.11",
+    "babel-jest": "^27.5.1",
     "eslint": "^8.11.0",
     "eslint-config-google": "^0.14.0",
+    "jest": "^27.5.1",
     "webpack": "^5.70.0",
     "webpack-cli": "^4.9.2"
   }
