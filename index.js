@@ -1,5 +1,3 @@
-export default class Calculator {
-  sum($a, $b) {
-    return $a + $b;
-  }
-}
+import Digits from './src/Digits';
+
+export {Digits};
