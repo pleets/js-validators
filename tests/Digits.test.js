@@ -13,5 +13,5 @@ test('It validates when value is not a number', () => {
 test('It get the error for not numbers', () => {
   const digits = new Digits('a');
   digits.isValid();
-  expect(digits.messages).toStrictEqual({notDigits: 'The input must contain only digits'});
+  expect(digits.getMessages()).toStrictEqual({notDigits: 'The input must contain only digits'});
 });

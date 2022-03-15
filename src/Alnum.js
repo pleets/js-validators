@@ -1,3 +1,5 @@
+import HasMessages from './concerns/HasMessages';
+
 class Alnum {
   RegExpr = /^(\d|[a-zA-Z]|\s)*$/;
   messages = {};
@@ -15,5 +17,7 @@ class Alnum {
     return true;
   }
 }
+
+Object.assign(Alnum.prototype, HasMessages);
 
 export default Alnum;

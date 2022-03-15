@@ -19,3 +19,11 @@ test('It validates alnums when value has numbers, letters and spaces', () => {
   const alnum = new Alnum('al56fs 567f aa 44');
   expect(alnum.isValid()).toBe(true);
 });
+
+test('It get the error for not alnums', () => {
+  const digits = new Alnum('añ/45@');
+  digits.isValid();
+  expect(digits.getMessages()).toStrictEqual({
+    notAlnum: 'The input contains characters which are non alphabetic and no digits',
+  });
+});

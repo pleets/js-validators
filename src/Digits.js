@@ -1,3 +1,5 @@
+import HasMessages from './concerns/HasMessages';
+
 class Digits {
   RegExpr = /^\d*$/;
   messages = {};
@@ -15,5 +17,7 @@ class Digits {
     return true;
   }
 }
+
+Object.assign(Digits.prototype, HasMessages);
 
 export default Digits;
